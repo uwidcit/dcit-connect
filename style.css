@@ -11,3 +11,13 @@ iframe{
   font:14px Helvetica,Arial,sans-serif;
   width:100%;
 }
+
+.modal{
+  padding: 0;
+}
+
+@media (max-width: 992px){
+  .modal {
+    width: 90%;
+  }
+}

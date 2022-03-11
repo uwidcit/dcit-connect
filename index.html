@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>DCIT Connect</title>
   </head>
   <body>
     <nav>
       <div class="nav-wrapper blue">
         <a href="#" class="brand-logo">DCIT Connect</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <ul id="nav-mobile" class="right">
           <li class="active"><a  href="index.html">Jobs</a></li>
           <li ><a class="waves-effect waves-light btn red modal-trigger" href="#modal1">Subscribe</a></li>
+          <li ><a class="waves-effect waves-light btn red modal-trigger" href="#modal2">Submit a Job</a></li>
         </ul>
       </div>
     </nav>
 
+    <div id="modal2" class="modal" style="@media (max-width: 992px){ width:95%; }  min-height: 90vh;  overflow-y: hidden;">
+    
+        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe referrerpolicy="no-referrer" loading='lazy' class="airtable-embed" src="https://airtable.com/embed/shrQ3mCrIJ8jyYGOz?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>
+     
+    </div>
+
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
-      <div class="modal-content">
+     
         <!-- Begin Mailchimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
         <div id="mc_embed_signup">
@@ -48,11 +55,11 @@
         </form>
         </div>
         <!--End mc_embed_signup-->
-      </div>
+    
   
     </div>
           
-    <iframe loading="lazy" class="airtable-embed" src="https://airtable.com/embed/shrxr0CZ3Hg29yEZt?backgroundColor=purple&viewControls=on" frameborder="0" onmousewheel=""></iframe>
+    <iframe loading="lazy" class="airtable-embed" referrerpolicy="no-referrer" src="https://airtable.com/embed/shrxr0CZ3Hg29yEZt?backgroundColor=purple&viewControls=on" frameborder="0" onmousewheel=""></iframe>
 
     <script type="module" src="/main.js"></script>
   </body>
