@@ -16,8 +16,19 @@ iframe{
   padding: 0;
 }
 
-@media (max-width: 992px){
+li {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+li > a {
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+@media only screen and (max-width: 992px){
   .modal {
-    width: 90%;
+    width: 90% !important;
+    max-height: 90% !important;
   }
 }

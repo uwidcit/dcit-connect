@@ -5,22 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DCIT Connect</title>
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
   </head>
   <body>
-    <nav>
+    
+    <nav >
       <div class="nav-wrapper blue">
-        <a href="#" class="brand-logo">DCIT Connect</a>
-        <ul id="nav-mobile" class="right">
-          <li class="active"><a  href="index.html">Jobs</a></li>
-          <li ><a class="waves-effect waves-light btn red modal-trigger" href="#modal1">Subscribe</a></li>
-          <li ><a class="waves-effect waves-light btn red modal-trigger" href="#modal2">Submit a Job</a></li>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <span class="hide-on-med-and-down brand-logo" style="margin-left: 15px;">DCIT Connect</span>
+        <ul class="right">
+          <li class="active hide-on-med-and-down" ><a href="/">Jobs</a></li>
+          <li class="hide-on-large-only">DCIT Connect</li>
+          <li><a class="waves-effect waves-teal btn-flat blue lighten-1 white-text modal-trigger" href="#modal1">Subscribe</a></li>
+          <li><a class="waves-effect waves-teal btn-flat blue lighten-1 white-text modal-trigger" href="#modal2">Add Job</a></li>
         </ul>
       </div>
     </nav>
+  
+    <ul id="slide-out" class="sidenav">
+      <li class="active"><a href="/">Jobs</a></li>
+    </ul>
 
     <div id="modal2" class="modal" style="@media (max-width: 992px){ width:95%; }  min-height: 90vh;  overflow-y: hidden;">
     
-        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe referrerpolicy="no-referrer" loading='lazy' class="airtable-embed" src="https://airtable.com/embed/shrQ3mCrIJ8jyYGOz?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        <iframe referrerpolicy="no-referrer" loading='lazy' class="airtable-embed" src="https://airtable.com/embed/shrQ3mCrIJ8jyYGOz?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>
      
     </div>
 
@@ -28,7 +38,7 @@
     <div id="modal1" class="modal">
      
         <!-- Begin Mailchimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+        
         <div id="mc_embed_signup">
         <form action="https://gmail.us14.list-manage.com/subscribe/post?u=d1a0520ddcf03b3eedcfc9a18&amp;id=60f19e7a63" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
