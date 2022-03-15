@@ -7,6 +7,26 @@
     <title>DCIT Connect</title>
 
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+    <style>
+      * {
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 0;
+            margin:0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #loader{
+          height: 100%;
+          display: grid;
+          place-items: center;
+        }
+    </style>
     <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
   </head>
   <body>
@@ -68,8 +88,23 @@
     
   
     </div>
-          
-    <iframe loading="lazy" class="airtable-embed" referrerpolicy="no-referrer" src="https://airtable.com/embed/shrxr0CZ3Hg29yEZt?backgroundColor=purple&viewControls=on" frameborder="0" onmousewheel=""></iframe>
+
+    <article id="loader" >
+      <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+              <div class="circle"></div>
+              </div><div class="gap-patch">
+              <div class="circle"></div>
+              </div><div class="circle-clipper right">
+              <div class="circle"></div>
+              </div>
+          </div>
+      </div>
+    </article>
+    
+
+    <iframe id="mainframe" loading="lazy" style="display: none;" class="airtable-embed" referrerpolicy="no-referrer" src="https://airtable.com/embed/shrxr0CZ3Hg29yEZt?backgroundColor=purple&viewControls=on" frameborder="0" onmousewheel=""></iframe>
 
     <script type="module" src="/main.js"></script>
   </body>
