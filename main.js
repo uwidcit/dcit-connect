@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
   M.AutoInit();
 });
 
-const loader = document.querySelector('#loader');
-const frame = document.querySelector('#mainframe');
+// const loader = document.querySelector('#loader');
+// const frame = document.querySelector('#mainframe');
 
-frame.addEventListener('load', event=>{
-    loader.style.display = 'none';
-    frame.style.display = 'block';
-});
+// frame.addEventListener('load', event=>{
+//     loader.style.display = 'none';
+//     frame.style.display = 'block';
+// });
